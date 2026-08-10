@@ -3,8 +3,8 @@ body {
     margin: 40px;
     background-color: #f8f8f8;
     color: #333;
-    background: #020024;
-    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 8%, rgba(5, 92, 176, 1) 14%, rgba(0, 212, 255, 1) 46%);
+    background: #192400;
+    background: linear-gradient(90deg,rgb(22, 36, 0) 0%, rgba(9, 9, 121, 1) 8%, rgba(5, 92, 176, 1) 14%, rgb(148, 202, 216) 46%);
 }
 
 nav {
@@ -29,4 +29,29 @@ h1 {
 
 p {
     color: #f8f8f8;
+}
+
+img{
+    width: 25%;
+}
+
+/* Container using CSS Grid */
+.about-container {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Column 1 (image): 300px width | Column 2 (text): takes the remaining space */
+    gap: 20px;                         /* Creates spacing between the grid columns */
+    align-items: center;               /* Vertically centers the content in each grid cell */
+    margin-top: 20px;
+}
+
+/* Make sure the image fills its assigned grid column properly */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;                /* Optional rounded corners */
+}
+
+/* Styling for the text column */
+.about-text {
+    line-height: 1.6;
 }
